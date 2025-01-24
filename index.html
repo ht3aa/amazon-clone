@@ -1,186 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- root tag -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-    <title>Document</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="http://127.0.0.1:5500/image.png"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container container-header">
+            <div class="logo-container border-white">
+                <div class="logo"></div>
+                <span class="dotin">.ir</span>
+            </div>
 
-  <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-          alt="Amazon Logo"
-          height="30"
-        />
-      </div>
-      <div class="location">
-        <span>Lieferung an Falkenstein 08223</span>
-        <br />
-        <a href="#" style="color: #00a8e1">Standort aktualisieren</a>
-      </div>
-      <div class="search-bar">
-        <select>
-          <option value="all">Alle</option>
-        </select>
-        <input type="text" placeholder="Amazon.de durchsuchen" />
-        <button>🔍</button>
-      </div>
-      <div class="options">
-        <div>
-          <span>DE</span>
-        </div>
-        <div>
-          <span>Hallo, anmelden</span>
-          <br />
-          <a href="#" style="color: #00a8e1">Konto und Listen</a>
-        </div>
-        <div>
-          <a href="#" style="color: #00a8e1"
-            >Warenrücksendungen und Bestellungen</a
-          >
-        </div>
-        <div>
-          <span>🛒</span>
-          <br />
-          <a href="#" style="color: #00a8e1">Einkaufswagen</a>
-        </div>
-      </div>
-    </nav>
+            <div class="address-container border-white">
+                <div class="icon-address">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <p>deliver to iraq</p>
+                </div>
+            </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <h1>Shop Amazon Devices</h1>
-      <h3>Alexa</h3>
-      <div class="card-container">
-        <div class="card">
-          <h4>Fashion</h4>
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/G/03/DE-hq/2021/img/X_Site/PD21/Fallback/XCM_CUTTLE_1321850_1653872_DE_3783333_379x304_1X_de_DE._SY304_CB656282119_.jpg"
-            alt="Fashion"
-          />
-          <a href="#">See more</a>
-        </div>
-        <div class="card">
-          <h4>Prime Video</h4>
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/G/03/DE-hq/2019/img/Amazon_Payments/XCM_Manual_1171263_Bilboard_Card_needed_CBCC_260x260_Amazon_Payments_XCM_Manual_1171263_de_amazon_payments_bilboard_card_needed_260x260_1_1558006181_jpg._SY304_CB464467768_.jpg"
-            alt="Prime Video"
-          />
-          <a href="#">Try 30 days for free</a>
-        </div>
-        <div class="card">
-          <h4>Gifts for Tech Fans</h4>
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/G/03/DE-hq/2018/img/Social-Shopping/1129983_us_social_shopping_tech_category_quad_card_260x260v4_1533125393._SY304_CB482430704_.jpg"
-            alt="Gifts for Tech Fans"
-          />
-          <a href="#">Find a perfect gift</a>
-        </div>
-        <div class="card">
-          <h4>Prime Reading</h4>
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/G/03/DE-hq/2021/img/X_Site/PD21/Fallback/XCM_CUTTLE_1321850_1653872_DE_3783333_379x304_1X_de_DE._SY304_CB656282119_.jpg"
-            alt="Prime Reading"
-          />
-          <a href="#">Start reading</a>
-        </div>
-        <div class="card">
-          <h4>Amazon.de VISA Card</h4>
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/G/03/handmade/2019/Gateway/Q3/XCM_Manual_1182884_2019_Q3_Gateway_Dashboards_and_billboards_260x260_Handmade_XCM_Manual_1182884_de_handmade_Q3_31_7_19_260x260_1563975018_jpg._SY304_CB441226931_.jpg"
-            alt="VISA Card"
-          />
-          <a href="#">Learn more</a>
-        </div>
-        <div class="card">
-          <h4>Gift Cards</h4>
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/G/03/DE-hq/2021/img/X_Site/PD21/Fallback/XCM_CUTTLE_1321850_1653872_DE_3783333_379x304_1X_de_DE._SY304_CB656282119_.jpg"
-            alt="Gift Cards"
-          />
-          <a href="#">Shop now</a>
-        </div>
-      </div>
-    </main>
+            <div class="search-container">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="back-to-top">
-        <a href="#">Back to top</a>
-      </div>
-      <div class="footer-content">
-        <div class="footer-column">
-          <h4>Get to Know Us</h4>
-          <ul>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press Releases</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Amazon Logistikblog</a></li>
-            <li><a href="#">Imprint</a></li>
-            <li><a href="#">Amazon Science</a></li>
-          </ul>
+            </div>
+
+            <div class="language-container border-white">
+                <p>English</p>
+                <div class="lauguge-image">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg" />
+                </div>
+            </div>
+
+            <div class="login-container border-white">
+                <p>Hello,<span>sign in</span></p>
+                <p class="account">Account & Lists</p>
+            </div>
+
+            <div class="return-order-container">
+                <p>Returns
+                <div class="order">& Orders</div>
+                </p>
+            </div>
+
+            <div class="cart-container border-white">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
         </div>
-        <div class="footer-column">
-          <h4>Make Money with Us</h4>
-          <ul>
-            <li><a href="#">Sell on Amazon</a></li>
-            <li><a href="#">Sell on Amazon Business</a></li>
-            <li><a href="#">Sell on Amazon Handmade</a></li>
-            <li><a href="#">Associates Programme</a></li>
-            <li><a href="#">Fulfillment by Amazon</a></li>
-            <li><a href="#">Seller Fulfilled Prime</a></li>
-            <li><a href="#">Advertise Your Products</a></li>
-            <li><a href="#">Independently Publish with Us</a></li>
-            <li><a href="#">Amazon Pay</a></li>
-            <li><a href="#">Host an Amazon Hub</a></li>
-            <li><a href="#">› See More Make Money with Us</a></li>
-          </ul>
+    </header>
+    <section class="amazon-main">
+        <div class="banner">
+            <h2>just in : new gifts for the holiday</h2>
         </div>
-        <div class="footer-column">
-          <h4>Amazon Payment Methods</h4>
-          <ul>
-            <li><a href="#">Amazon Visa</a></li>
-            <li><a href="#">Shop with Points</a></li>
-            <li><a href="#">Credit Card</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Monthly Invoice</a></li>
-            <li><a href="#">SEPA Direct Debit</a></li>
-            <li><a href="#">Amazon Currency Converter</a></li>
-            <li><a href="#">Top Up Your Account</a></li>
-            <li><a href="#">Top Up Your Account in Store</a></li>
-          </ul>
+    
+        <div class="product-grid">
+            <div class="product">
+                <img src="box1_image.jpg" alt="Produkt 1">
+                <p>clothes</p>
+            </div>
+            <div class="product">
+                <img src="images.jpg" alt="Produkt 2">
+                <p>tools</p>
+            </div>
+            <div class="product">
+                <img src="box3_image.jpg" alt="Produkt 3">
+                <p>furniture</p>
+            </div>
+            <div class="product">
+                <img src="box6_image.jpg" alt="Produkt 4">
+                <p>pet care</p>
+            </div>
+            <div class="product">
+                <img src="fff.jpg" alt="Produkt 4">
+                <p>electronic</p>
+            </div>
+            <div class="product">
+                <img src="hero_image.jpg" alt="Produkt 4">
+                <p>Devices</p>
+            </div>
+            <div class="product">
+                <img src="download.jpg" alt="Produkt 4">
+                <p>equipment</p>
+            </div>
+            <div class="product">
+                <img src="box2_image (1).jpg" alt="Produkt 4">
+                <p>health care</p>
+            </div>
+            <div class="product">
+                <img src="mmmm.jpg" alt="Produkt 4">
+                <p>kid game</p>
+            </div>
         </div>
-        <div class="footer-column">
-          <h4>Let Us Help You</h4>
-          <ul>
-            <li><a href="#">COVID-19 and Amazon</a></li>
-            <li><a href="#">Track Packages or View Orders</a></li>
-            <li><a href="#">Delivery Rates & Policies</a></li>
-            <li><a href="#">Returns & Replacements</a></li>
-            <li><a href="#">Recycling</a></li>
-            <li><a href="#">Manage Your Content and Devices</a></li>
-            <li><a href="#">Amazon Mobile App</a></li>
-            <li><a href="#">Customer Service</a></li>
-            <li><a href="#">Cancel Vodafone Contracts</a></li>
-            <li><a href="#">Accessibility</a></li>
-            <li><a href="#">Report Illegal Content</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="language-selector">
-          <a href="#">English</a>
-          <a href="#">Germany</a>
-        </div>
-        <p>&copy; 2025 Amazon Clone</p>
-      </div>
-    </footer>
-  </body>
+    </section>
+    <section>
+        <footer>
+            <div class="foot-panel1">
+                <button class="button1">back to top</button> 
+            </div>
+            <div class="foot-panel2">
+                <ul>
+                    <p>get to know us</p>
+                    <a>careers</a>
+                    <a>blog</a>
+                    <a>about amazon </a>
+                    <a>investor Devices</a>
+                    <a>amazon science</a>                                       
+                </ul>
+                <ul>
+                    <p>Make Money with Us</p>
+                    <a>Sell products on Amazon</a>
+                    <a>Sell apps on Amazon</a>
+                    <a>Become an Affiliate </a>
+                    <a>Advertise Your Products</a>
+                    <a>Self-Publish with Us</a>
+                    <a>Host an Amazon Hub</a> 
+                    <a>›See More Make Money with Us</a>                                      
+                </ul>
+                <ul>
+                    <p>Amazon Payment Products</p>
+                    <a>Amazon Business Card</a>
+                    <a>Shop with Points</a>
+                    <a>Reload Your Balance  </a>
+                    <a>Amazon Currency Converter </a>                                       
+                </ul>
+                <ul>
+                    <p>Let Us Help You </p>
+                    <a>Amazon and COVID-19</a>
+                    <a>Your Account</a>
+                    <a>Your Orders  </a>
+                    <a>Shipping Rates & Policies </a>
+                    <a>Returns & Replacements </a> 
+                    <a>Manage Your Content and Devices </a>
+                    <a>Help </a>                                      
+                </ul>
+            </div>
+        </footer>
+    </section>
+</body>
 </html>
