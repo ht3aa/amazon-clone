@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="startpage">
+    <!-- Logo and Search Bar -->
+    <div class="header-main">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+      </div>
+
+      <!-- Location Section -->
+      <div class="location">
+        <!-- Location Icon (FontAwesome) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="location-icon" width="20" height="20">
+          <path
+            d="M256 8C114.6 8 0 114.6 0 256c0 72.9 42.8 182.1 109.5 288.6 49.2 75.2 103.3 133.8 146.5 182.6 2.3 2.9 4.6 5.8 7.1 8.7 2.5-2.9 4.8-5.8 7.1-8.7 43.2-48.8 97.3-107.4 146.5-182.6C469.2 438.1 512 328.9 512 256c0-141.4-114.6-248-256-248zm0 368c-88.4 0-160-71.6-160-160s71.6-160 160-160 160 71.6 160 160-71.6 160-160 160z" />
+        </svg>
+
+        <span>Deliver to Iraq</span>
+      </div>
+
+      <!-- Search Bar Section -->
+      <div class="search-container">
+        <select class="search-category">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Clothing</option>
+          <option>Home</option>
+        </select>
+        <input type="text" id="search-input" placeholder="Search Amazon">
+        <button onclick="searchAmazon()">Search</button>
+      </div>
+
+      <!-- Language Section -->
+      <div class="language" onclick="toggleLanguageDropdown()">
+        <span id="language">EN</span> <i class="arrow-down"></i>
+        <ul id="language-dropdown" class="dropdown-hidden">
+          <li onclick="changeLanguage('EN')">EN</li>
+          <li onclick="changeLanguage('ES')">ES</li>
+          <li onclick="changeLanguage('FR')">FR</li>
+        </ul>
+      </div>
+
+      <!-- Header Links -->
+      <div class="header-links">
+        <a href="#">Hello, Sign in</a>
+        <a href="#">Returns & Orders</a>
+        <!-- Shopping Cart Icon (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="shopping-cart-icon" width="24" height="24">
+          <path
+            d="M7 4V2H4C2.9 2 2 2.9 2 4C2 5.1 2.9 6 4 6H5.21L6.29 9.22C6.44 9.54 6.71 9.76 7.03 9.88L13.53 12.88C13.86 13 14.18 13.18 14.3 13.51L15.9 16.21C16.02 16.44 16.17 16.65 16.34 16.83C16.52 17.01 16.72 17.15 16.93 17.25L19.93 18.76C20.07 18.85 20.2 18.91 20.34 18.94L21 19H20C18.9 19 18 19.9 18 21H6C6 19.9 5.1 19 4 19H2C2 19 2.07 19 2.1 19.01L3 19.27C3.32 19.55 3.72 19.8 4.1 20L6.7 16.89L6.7 16.9L4 5H18.83L17 10H14L13.28 6H7.72L7 4Z"
+            fill="white" />
+        </svg>
+
+
+
+        <a href="#">Cart (0)</a>
+      </div>
+    </div>
+    <ul>
+      <li><a href="">&#9776; All</a></li>
+      <li><a href="">Today's Deals</a></li>
+      <li><a href="">Customer Service</a></li>
+      <li><a href="">Registry</a></li>
+      <li><a href="">Gift Cards</a></li>
+      <li><a href="">Sell</a></li>
+    </ul>
+  </header>
+  <main>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images -->
+      <div class="mySlides fade">
+        <img src="https://m.media-amazon.com/images/I/61q5Pg3hO8L._SX3000_.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://m.media-amazon.com/images/I/71VcGrxQRBL._SX3000_.jpg" style="width: 100%" />
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10092;</a>
+      <a class="next" onclick="plusSlides(1)">&#10093;</a>
+    </div>
+
+    <div>
+      <!-- First Grid Section -->
+
+      <div class="wrappercard gridsection firstgridsection">
+        <div class="oneimagecard">
+          <h2>Shop for you home essentials</h2>
+          <a href=""><img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg"
+              alt="" width="300" height="300" /></a><br>
+          <a href="">Shop gaming</a>
+        </div>
+        <div>
+          <h2>Shop deals in Fashion</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Jeans under $50</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Tops under $25</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Dresses under 30%</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Shoes under %50</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See all deals</a>
+        </div>
+        <div>
+          <h2>Gaming accessories</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Headsets</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Keyboards</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Computer mice</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Chairs</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See more</a>
+        </div>
+        <div class="oneimagecard">
+          <h2>Toys under $25</h2>
+          <a href=""><img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg"
+              alt="" width="300" height="300" /></a><br>
+          <a href="">Shop now</a>
+        </div>
+        <div>
+          <h2>Shop for your home essentials</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Cleaning Tools</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home Storage</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home Decor</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Bedding</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">Discover more in Home</a>
+        </div>
+        <div>
+          <h2>New home arrivals under $50</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Kitchen & dining </h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home Improvement</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Decor</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_318_HP_NewArrivals_QuadCard_D_04_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Bedding & bath</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">Shop the latest from Home</a>
+        </div>
+        <div>
+          <h2>Refresh your space</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Dining</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Kitchen</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Health and Beauty</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See more</a>
+        </div>
+        <div>
+          <h2>Easy updates for elevated spaces</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Baskets & hampers</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Hardware</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Accent furniture</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Wallpaper & paint </h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See home products</a>
+        </div>
+
+      </div>
+
+      <!-- Scroll Row Section -->
+      <div class="">
+        <h2>Best Sellers in Books</h2>
+        <div class="cards">
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/81crMlhnQtL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/61azTLgsSwL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/61l8LHt4MeL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/71rpa1-kyvL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/71je3-DsQEL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/81ytGlIkLoL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/61su39k8NUL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/71Zd1ixazOL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/5176LKi-MLL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/71ZLgz1U1lL._AC_SY200_.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href=""><img src="https://m.media-amazon.com/images/I/817-Vrzp+tL._AC_SY200_.jpg" alt=""></a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Second Grid Section -->
+
+      <div class="wrappercard gridsection">
+        <div>
+          <h2>Shop deals in Fashion</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Jeans under $50</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Tops under $25</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Dresses under 30%</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Shoes under %50</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See all deals</a>
+        </div>
+        <div>
+          <h2>Shop deals in Fashion</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Jeans under $50</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Tops under $25</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Dresses under 30%</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Shoes under %50</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See all deals</a>
+        </div>
+        <div>
+          <h2>Get your game on</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Jeans under $50</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Tops under $25</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Dresses under 30%</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Shoes under %50</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See all deals</a>
+        </div>
+        <div>
+          <h2>Shop deals in Fashion</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Jeans under $50</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Tops under $25</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Dresses under 30%</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Shoes under %50</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See all deals</a>
+        </div>
+        <div>
+          <h2>Shop for your home essentials</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Cleaning Tools</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home Storage</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home Decor</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Bedding</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">Discover more in Home</a>
+        </div>
+        <div>
+          <h2>New home arrivals under $50</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Kitchen & dining </h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home Improvement</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Decor</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_318_HP_NewArrivals_QuadCard_D_04_1x._SY116_CB555960040_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Bedding & bath</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">Shop the latest from Home</a>
+        </div>
+        <div>
+          <h2>Refresh your space</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Dining</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Home</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Kitchen</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Health and Beauty</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See more</a>
+        </div>
+        <div>
+          <h2>Easy updates for elevated spaces</h2>
+
+          <div class="fourimagecard">
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <br>
+                  <h5>Baskets & hampers</h5>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Hardware</h5>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Accent furniture</h5>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg"
+                    alt="" width="100" height="100" />
+                  <h5>Wallpaper & paint </h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a style="text-decoration: none;" href="">See home products</a>
+        </div>
+
+      </div>
+
+
+      <!---  Down Frame -->
+      <div class="downframe">
+        <h2>See personalized recommendations</h2>
+        <button>Sign in</button>
+        <p>New Customer?<a href="">Start here</a></p>
+      </div>
+  </main>
+  <footer>
+    <!-- Go Top of Our page by ID StartPage in header -->
+    <a href="#startpage">
+      <span> Back to top </span>
+    </a>
+
+    <div class="wrappercard">
+      <div class="card">
+        <h6>Top categories in Kitchen appliances</h6>
+        <ul>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About Amazon</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Amazon Devices</a></li>
+          <li><a href="">Amazon Science</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h6>Top categories in Kitchen appliances</h6>
+        <ul>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About Amazon</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Amazon Devices</a></li>
+          <li><a href="">Amazon Science</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Top categories in Kitchen appliances</h6>
+        <ul>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About Amazon</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Amazon Devices</a></li>
+          <li><a href="">Amazon Science</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Amazon Payment Products</h6>
+        <ul>
+          <li><a href="">Amazon Business Card</a></li>
+          <li><a href="">Shop with Points</a></li>
+          <li><a href="">Reload You Balance</a></li>
+          <li><a href="">Amazon Currency Converter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
